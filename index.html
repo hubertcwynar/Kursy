@@ -19,28 +19,48 @@
             margin: 0 auto;
         }
 
-        nav a{
-            display: inline-block;
-            color: brown;
-            padding: 10px 15px;
-            margin: 20px 10px;
-            text-align: center;
-            border: 2px solid brown;
-            font-size: 24px;
-            text-decoration: none;
-            text-transform: uppercase;
-
+        
+        a:hover{
+            border-bottom: 2px solid brown;
         }
 
-        a:hover{
-            color: #ddd;
+        a.rej:hover{
             background-color: brown;
+            color: white;
+            transition: 0.4s;
+            letter-spacing: 2px;
+        }
+        
+        a.rej{
+            border: 2px solid brown;
+            margin-left: 60px;
+            margin-right: 50px;
+            
         }
 
         nav{
-            background-color:#ddd;
-            height: 10vh;
-            text-align: center;
+            margin: 20px 0;
+            text-align: right;
+        }
+
+
+        nav a{
+            display:inline-block;
+            font-size: 22px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: arial, sans-serif;
+            color: brown;
+            padding: 10px 20px;
+            margin: 0 5px;
+            
+
+            /*display: inline-block;
+            
+            padding: 10px 20px;
+            
+            text-align: right;
+            border-bottom: 2px solid brown;*/
         }
 
         header{
@@ -65,7 +85,7 @@
             <a href="#">Start</a>
             <a href="#">Naprawy</a>
             <a href="#">Holowanie</a>
-            <a href="#">Rejestracja</a>
+            <a href="#" class="rej">Rejestracja</a>
         </nav>
         <header>
 
