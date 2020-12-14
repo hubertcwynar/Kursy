@@ -7,70 +7,74 @@
     <meta name='keywords' content='kurs, html, css'>
     <link rel="stylesheet" href="style.css">
     <title>Kurs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.wrap{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        nav a{
+            display: inline-block;
+            color: brown;
+            padding: 10px 15px;
+            margin: 20px 10px;
+            text-align: center;
+            border: 2px solid brown;
+            font-size: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+
+        a:hover{
+            color: #ddd;
+            background-color: brown;
+        }
+
+        nav{
+            background-color:#ddd;
+            height: 10vh;
+            text-align: center;
+        }
+
+        header{
+            background-color: #6D6D6D;
+            height: 30vh;
+        }
+
+        main{
+            background-color: #FFF8E1;
+            height: 55vh;
+        }
+
+        footer{
+            background-color: #000;
+            height: 5vh;
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
-        <aside class="promo">
-            <h1>Baner</h1>
-        </aside>
+        <nav>
+            <a href="#">Start</a>
+            <a href="#">Naprawy</a>
+            <a href="#">Holowanie</a>
+            <a href="#">Rejestracja</a>
+        </nav>
         <header>
-            <div class="baner">
-                <img class="logo" src="logo.png" alt="logo">
-                <h1>Slogan</h1>
-            </div>
 
-            <nav class="header">
-                <ul>
-                    <li><a href="">Start</a></li>
-                    <li><a href="">O nas</a></li>
-                    <li><a href="">Sklep</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">kontakt</a></li>
-                </ul>
-            </nav>
         </header>
-
         <main>
-            <section class="fruits">
-                <h1>Galeria produktów owocowych</h1>
-                <div >
-                   <img src="" alt="">
-                   <img src="" alt="">
-                   <img src="" alt="">
-                   <img src="" alt="">
-                </div>
-                <button>
-                    Zonbacz więcej
-                </button>
-            </section>
 
-            <section class="wege">
-                <h1>Galeria produktów warzywnych</h1>
-                <div >
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <button>
-                    Zonbacz więcej
-                </button>
-            </section>
         </main>
-
         <footer>
-            <div class="contact">
-                <p>dane teleadresowe</p>
-            </div>
 
-            <nav class="footer">
-                <ul>
-                    <li><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                </ul>
-            </nav>
         </footer>
     </div>
 </body>
