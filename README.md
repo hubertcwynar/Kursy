@@ -1,6 +1,4 @@
-<<<<<<< HEAD:README.md
-# Kurs
-Nauka Git Html Css JavaScript React NodeJS
+# Nauka Git Html Css JavaScript React NodeJS
 =======
 ## Welcome to GitHub Pages
 
