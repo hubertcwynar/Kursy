@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu */
+
+nav{
+    background-color: #666;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+nav ul{
+    padding: 30px 0;
+    max-width: 1024px;
+    margin: auto;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    margin-right: 30px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-family: arial;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: chartreuse;
+    border-color: chartreuse;
+}
+/* Sekcja */
+
+section{
+    height: 30vw;
+    background-color: rgb(220, 220, 220);
+}
