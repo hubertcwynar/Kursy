@@ -1,0 +1,50 @@
+<!--
+1. Zrób reset stylów
+2. Ustaw przyciski obok siebie (wykorzystaj właściwość float)
+3. nadaj nawigacji koloru #343A40
+4. rozwiąz problem z float (każdy z 4 sposobów przećwicz, zostaw jeden).
+5. zrób w nawigacji padding lewy na 5%
+6. przestrzeń na przyciski (ul) nie może być większa niż 1280px i ma być wycentrowana w nav. ------
+7. Zmień kolor fontów w przyciskach na #bbb. Usuń podkreślenie.
+8. Usuń kropki przy przyciskach.
+9.wysokość przycisku ma mieć 70 pikseli - osiągnij to za pomocą właściwości line height lub paddingów (spróbuj i tak i tak).
+10. Szerokość przycisków ma być ustawiona automatycznie, ale z obu stron ma być powiększona o padding 40px.
+11. Ustaw wartosć font-size przycisków na 18px, zwiększ odstęp między literami do 1px;
+12. ustaw font na roboto (zaimportuje w head z google fonts)
+13.  Ustaw border-prawy dla przycisków na 2px solid i kolor czarny (sprawdź też szary, któy podoba Ci sie bardziej?). 
+14. Usuń border z ostatniego przycisku. Zadanie na 6 (bardzo trudne).---------
+15. Zaimportuj bibliotekę ikon/fontów z Font Awesome. https://fontawesome.com
+16. Dodaj 5 ikon w pliku html (w elemencie <a>). Nazwy ikon w kolejnych pozycjach menu: home shopping-cart newspaper money-bill-alt users-
+17. Zrób przerwę miedzy ikoną a tekstem przycisku na 10px.
+18.Ustaw ikonką wielkość fonta na 24px. 
+19. (do potestowania) Za pomocą własciwości vertical-align dla tych elementów przesuń ikonkę. W jaki sposób? Nadwaj różne wartości, nawet minusowe np. vertical-align: -5px; czy vertical-align: 2px; Wybierz Twoim zdaniem najlepszą wartość.
+20. Po najechaniu na przycisk kolor fontów ma zmienić się na biały (ikony i tekstu).
+21. Dodaj przyciskom właściwość display:block; zobacz róznice w borderze, ale zwróc też uwagę na to, ze teraz cały przycisk jest kliklany (zobacz co było kliklane przed dodaniem tej właściwości).
+22. odsuń nawigację od tekstu znajdujacego się w p o 40px;
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d902b7aa26.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="clearfix">
+      <li><a href=""><i class="fas fa-home"></i></i>Start</a></li>
+      <li><a href=""><i class="fas fa-shopping-cart"></i>Sklep</a></li>
+      <li><a href=""><i class="far fa-newspaper"></i>Blog</a></li>
+      <li><a href=""><i class="far fa-money-bill-alt"></i>Oferta dnia</a></li>
+      <li><a href=""><i class="fas fa-users"></i>Kontakt</a></li>
+    </ul>
+  </nav>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus vel at minus, ullam impedit. Perspiciatis facilis, ducimus omnis. Dolores facilis, officia voluptatem molestiae eaque cupiditate reprehenderit nisi sit fugiat, nihil.</p>
+</body>
+</html>
