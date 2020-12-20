@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+div.board{
+    width: 400px;
+    margin: 100px auto 0;
+    border: 3px solid black;
+}
+
+div div{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+div div:nth-child(even){
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
