@@ -9,6 +9,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
 header{
     position: relative;
     background-color: #29a6dc;
@@ -258,5 +264,246 @@ header button{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 30vh;
+}
+
+.features{
+    max-width: 1600px;
+    margin: 50px auto 0;
+    padding: 5%;
+    text-align: center;
+}
+
+.features h1{
+    font-family: 'saira condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features h2{
+    font-family: 'saira condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.features img{
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+
+}
+
+.features p{
+    font-family: 'saira', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+@media (min-width: 360px){
+    
+    .features h1{
+        font-size: 28px;
+    }
+
+    .features h2{
+        font-size: 24px;
+    }
+
+    .features p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .features h1{
+        font-size: 34px;
+    }
+
+    .features h2{
+        font-size: 28px;
+    }
+
+    .features p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .feature{
+        float: left;
+        width: 33%;
+        padding: 20px;
+
+    }
+
+    .features{
+        padding: 5% 2%;
+    }
+
+    .features h1{
+        font-size: 34px;
+    }
+
+    .features h2{
+        font-size: 22px;
+    }
+
+    .features p{
+        font-size: 16px;
+        line-height: 120%;
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1600px){
+
+    .feature{
+        padding: 20px 40px;
+    }
+
+    .features{
+        padding: 5% 2%;
+    }
+
+    .features h1{
+        font-size: 60px;
+    }
+
+    .features h2{
+        font-size: 32px;
+    }
+
+    .features p{
+        font-size: 21px;
+        line-height: 160%;
+        padding: 0 10px;
+    }
+}
+
+.portfolio{
+    background-color: #222;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1{
+    font-family: "saira condensed",sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img{
+    width: 100%;
+}
+
+.portfolio .about{
+    color: white;
+    font-family: 'saira',sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+
+}
+
+.portfolio .about h2{
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .project{
+    margin: 0 auto 20px;
+    max-width: 1400px
+}
+
+.portfolio .project:nth-of-type(odd){
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even){
+    background-color: #29a6dc;
+}
+
+@media(min-width: 768px){
+    .portfolio h1{
+        font-size: 40px;
+    }
+
+    .portfolio .about h2{
+        font-size: 28px;
+        text-indent: 40px;
+    }
+    
+    .portfolio .about p{
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .portfolio .project{
+        margin-bottom: 40px;
+    }
+}
+
+@media (orientation: landscape){
+    .web,.about{
+        width: 50%;
+        float: left;
+    }
+
+    .web img{
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web{
+        float: right;
+    }
+
+    .portfolio .project:nth-of-type(even) .about{
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p{
+        padding-right: 20px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2{
+        text-indent: 0;
+        margin-left: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px){
+    .portfolio h1{
+        font-size: 60px;
+        padding:30px 0;
+    }
+
+    .portfolio .about h2{
+        padding-top: 50px;
+        margin-bottom: 40px;
+        
+    }
+    
+    .portfolio .about p{
+        line-height: 200%;
+    }
+
+    .portfolio .project{
+        margin-bottom: 40px;
+    }
 }
