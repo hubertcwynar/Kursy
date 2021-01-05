@@ -263,7 +263,7 @@ header button{
     }
 }
 
-section{
+footer{
     min-height: 30vh;
 }
 
@@ -505,5 +505,92 @@ section{
 
     .portfolio .project{
         margin-bottom: 40px;
+    }
+}
+
+.slogan{
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    color: white;
+    background-attachment: fixed;
+    
+}
+
+.slogan h1{
+    font-family: 'saira condensed', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogan p{
+    font-family: 'saira',sans-serif;
+    font-size: 18px;
+}
+
+.slogan p.author{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .bg{
+    background-color: rgba(0,63,114,0.5);
+    padding: 30px 10px;
+}
+
+@media (orientation: landscape){
+    .slogan p{
+        width:70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .slogan .bg{
+        padding: 50px 10px;
+
+    }
+
+    .slogan h1{
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+    
+    .slogan p{
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .slogan p.author{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1024px){
+    .slogan .bg{
+        padding: 80px 10px;
+
+    }
+
+    .slogan h1{
+        font-size: 60px;
+        margin-bottom: 55px;
+    }
+    
+    .slogan p{
+        font-size: 40px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .slogan p.author{
+        margin-top: 40px;
+        font-size: 26px;
     }
 }
