@@ -594,3 +594,110 @@ footer{
         font-size: 26px;
     }
 }
+
+/* HOBBY */
+
+.hobby{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .iteam{
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .iteam:nth-of-type(1){
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .iteam:nth-of-type(2){
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .iteam:nth-of-type(3){
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .iteam:nth-of-type(4){
+    background-image: url(../images/hobby4.jpg);
+}
+
+.hobby .iteam p{
+    font-family: 'saira', sans-serif;
+    color: white;
+    text-align: center;
+    /* line-height: 25vh; */
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0,0, 0.5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.hobby h1{
+    padding: 20px;
+    font-family: 'saira',sans-serif;
+    text-align: center;
+    font-size: 36px;
+}
+
+@media(min-width: 533px){
+    .hobby .iteam{
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media(min-width: 768px){
+    .hobby h1{
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+
+    }
+
+    .hobby .iteam p{
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media(min-width: 1024px){
+    .hobby .iteam p{
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .iteam:hover p{
+        opacity: 1;
+    }
+
+    .hobby .iteam{
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .iteam:hover{
+        background-size: 130%;
+    }
+}
+
+@media(min-width: 1600px){
+    .hobby h1{
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+
+    }
+
+    .hobby .iteam p{
+        font-size: 40px;
+    }
+}
