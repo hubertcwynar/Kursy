@@ -385,6 +385,9 @@ footer{
     }
 }
 
+
+/* PORTFOLIO */
+
 .portfolio{
     background-color: #222;
     padding: 10px 0 30px;
@@ -699,5 +702,100 @@ footer{
 
     .hobby .iteam p{
         font-size: 40px;
+    }
+}
+
+/* Sekcja kontakt */
+
+.contact .wrap{
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact{
+    background-color: #222;
+    padding: 20px;
+}
+
+.contact h1{
+    font-family: 'saira condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color:white;
+    text-align: center;
+
+}
+
+.contact input, .contact button, .contact textarea{
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'saira',sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input{
+    
+    height: 36px;
+    
+
+}
+
+.contact textarea{
+    height: 120px;
+}
+
+.contact button{
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #222;
+    color:white;
+    border: 2px solid white;
+}
+
+.contact .socials{
+    padding-top: 30px;
+    font-size: 0;
+
+}
+
+
+.contact .social{
+    padding-top: 10px;
+    color: white;
+    font-family: 'Saira condensed',sans-serif;
+
+}
+
+.contact .socials img{
+    float: left;
+}
+
+.contact .socials span{
+    line-height: 72px;
+    /* padding-left: 20px; */
+    float: left;
+    font-size: 20px;
+}
+
+@media(min-width:533px){
+    .contact .social{
+        /* display: inline-block; */
+        width: 50%;
+    }
+}
+
+@media(min-width: 1024px){
+    .contact form, .contact .socials{
+        float: left;
+        width: 50%;
+    }
+
+    .contact .social{
+        display: block;
+        /* width: 50%;
+        margin: 0 auto; */
     }
 }
