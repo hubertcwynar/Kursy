@@ -263,9 +263,7 @@ header button{
     }
 }
 
-footer{
-    min-height: 30vh;
-}
+
 
 .features{
     max-width: 1600px;
@@ -715,7 +713,7 @@ footer{
 
 .contact{
     background-color: #222;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .contact h1{
@@ -728,7 +726,9 @@ footer{
 
 }
 
-.contact input, .contact button, .contact textarea{
+.contact input, 
+.contact button, 
+.contact textarea{
     width: 100%;
     margin-bottom: 25px;
     font-family: 'saira',sans-serif;
@@ -763,39 +763,89 @@ footer{
 
 
 .contact .social{
-    padding-top: 10px;
+    padding: 10px 0;
     color: white;
     font-family: 'Saira condensed',sans-serif;
 
 }
 
-.contact .socials img{
+.contact .social img{
     float: left;
 }
 
-.contact .socials span{
+.contact .social span{
     line-height: 72px;
-    /* padding-left: 20px; */
+    padding-left: 20px;
     float: left;
     font-size: 20px;
 }
 
 @media(min-width:533px){
     .contact .social{
-        /* display: inline-block; */
+        display: inline-block;
         width: 50%;
     }
 }
 
 @media(min-width: 1024px){
-    .contact form, .contact .socials{
+
+    .contact h1{
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .contact form, 
+    .contact .socials{
         float: left;
         width: 50%;
+        padding: 0 20px;
     }
 
     .contact .social{
         display: block;
-        /* width: 50%;
-        margin: 0 auto; */
+        width: 50%;
+        margin: 0 auto;
     }
+
+    .contact input, 
+    .contact button, 
+    .contact textarea{
+        margin-bottom: 35px;
+    }
+
+    .contact input{
+    
+        height: 46px;
+        font-size: 24px;
+    
+    }
+    
+    .contact textarea{
+        height: 180px;
+        font-size: 24px;
+    }
+    
+    .contact button{
+        font-size: 20px;
+        line-height: 50px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .contact button:hover{
+        color: #000;
+        background-color: #fff;
+        
+    }
+
+    
+}
+
+footer{
+    background-color: #29a6dc;
+    color: white;
+    font-family: 'saira',sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
 }
