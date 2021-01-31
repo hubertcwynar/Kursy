@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    text-align: center; 
+}
+
+.board{
+    position: absolute;
+    top: calc(50% - 15vw - 10px);
+    left: calc(50% - 15vw - 10px);
+    display: inline-block;
+    border: 10px solid black;
+    width: 30vw;
+    height: 30vw;
+    font-size: 0;
+}
+
+span{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+}
+
+div.board>span:nth-child(1),
+div.board>span:nth-child(4){
+    background-color: red;
+}
+
+h1{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+}
