@@ -1,39 +1,173 @@
-<!-- 
-    Układ 16:9
-    Ma być podobny (nie pixel w pixel)
-    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
-
-    ZŁOTE ZASADY
-    - Zrób tak jak potrafisz i tyle ile potrafisz
-    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
-    - Nie przeskakuj ćwiczenia. 
- -->
 <!DOCTYPE html>
 <html lang="pl">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A dream about old Japan</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Menu</title>
+    <script src="https://kit.fontawesome.com/d902b7aa26.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body {
+            height: 300vh;
+        }
+
+        .wrap {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .wrap,
+        nav.desktop,
+        header {
+            height: 360px;
+        }
+
+        nav.desktop {
+            float: left;
+            width: 300px;
+            background-color: blanchedalmond;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav.desktop a {
+            display: block;
+            line-height: 72px;
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 0 5px 0 30px;
+        }
+
+        nav.desktop i {
+            width: 50px;
+            border-right: solid black 2px;
+            margin-right: 20px;
+            transition: 0.2s;
+        }
+
+        nav.desktop a:hover i {
+            margin-right: 50px;
+        }
+
+        nav.desktop a:hover {
+            color: orange;
+        }
+
+        header {
+            float: left;
+            width: calc(100% - 300px);
+            background-image: url(img/pianino.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        section {
+            margin-top: 50px;
+        }
+
+        section h1 {
+            font-size: 40px;
+            font-family: arial;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav.mobile {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            nav.desktop {
+                display: none;
+            }
+
+            nav.mobile {
+                position: fixed;
+                display: block;
+                width: 72px;
+                height: 100%;
+                background-color: black;
+                color: white;
+            }
+
+            nav.mobile a {
+                display: block;
+                line-height: 10vh;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            nav.mobile a:hover {
+                color: orange;
+            }
+
+            nav.mobile li:nth-child(1) a {
+                color: royalblue;
+            }
+
+            header {
+                width: 100%;
+            }
+
+            section h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="picture">
-        <img src="img/japan1.png" alt="">
-        <img src="img/japan2.png" alt="">
-        <img src="img/japan3.png" alt="">
-        <img src="img/japan4.png" alt="">
-        <img src="img/japan5.png" alt="">
-        <img src="img/japan6.png" alt="">
-        <img src="img/japan7.png" alt="">
-        <img src="img/japan8.png" alt="">
-        <img src="img/japan9.png" alt="">
-        <img src="img/japan10.png" alt="">
-        <img src="img/japan11.png" alt="">
+    <div class="wrap clearfix">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i> start</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> oferta</a></li>
+                <li><a href="#"><i class="fas fa-rss"></i> blog</a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i> terminarz</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i> kontakt</a></li>
+            </ul>
+        </nav>
 
+        <nav class="mobile">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+
+        <header>
+
+        </header>
     </div>
+    <section>
+        <h1>Witaj w naszym świecie</h1>
+    </section>
 </body>
 
 </html>
